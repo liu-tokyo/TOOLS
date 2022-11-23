@@ -1,6 +1,27 @@
 # Typora - Markdown编辑工具
 
-## 1. 调整源码编辑区域宽度
+应用非常广泛的Markdown文档编辑工具软件，虽然当前已经开始收费，价格 90 元人民币，可以注册 3 台电脑，算不上贵。  
+※如果觉得注册比较麻烦，也有免费版本，足够应付我们的平日工作。
+
+## 1. 下载及安装
+
+- 官方下载地址：
+
+  https://typora.io/
+
+- 最后免费版本的下载地址：
+
+  https://www.typora.io/windows/dev_release.html?utm_source=0xo.net
+
+  `0.11.18` 版本，只有 [Linux](https://download.typora.io/linux/typora_0.11.18_amd64.deb) 的版本是真实免费的。
+  
+  Windows的免费版本，只有一个 `0.9.98` ：
+  
+  - [Download old version (Windows x64)](https://download.typora.io/windows/typora-update-x64-1213.exe) 
+  - [Download old version (Windows x86)](https://download.typora.io/windows/typora-update-ia32-1213.exe) 
+  - [Download old version (Linux x64)](https://download.typora.io/linux/typora_0.9.98_amd64.deb)
+
+## 2. 调整源码编辑区域宽度
 
 Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px，对当前流行电脑的分辨率来说，实在是太窄了，工作起来也非常别扭。
 
@@ -18,7 +39,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   
   
 
-## 2. 修改编辑器（主题） 的宽度
+## 3. 修改编辑器（主题） 的宽度
 
 这个编辑宽度也可能是为了照顾所有的显示器，编辑宽度显得比较局促。
 
