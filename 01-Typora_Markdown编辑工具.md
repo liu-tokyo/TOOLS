@@ -64,3 +64,17 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   ```
 
   如果不想用像素 1200px ，可以设置为 `90%` 的比例数据；考虑到个人一直会在左侧显示大纲内容，用比例方式是更为合适的。
+
+## 4. 卸载
+
+网上有这样的说法，然而好像没有解决问题。
+
+1. 打开控制面板，双击添加和删除程序，选择Typora后，右键卸载。
+
+2. 删除Typora残留的文件，使用下面的命令：
+
+   ```
+   DEL /F /Q "C:\Users\%USERNAME%\AppData\Roaming\Typora\profile.data"
+   REG delete HKEY_CURRENT_USER\SOFTWARE\Typora /f
+   ```
+
