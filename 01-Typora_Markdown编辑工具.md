@@ -35,7 +35,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   
   修改的情况如图所示：
   
-  ![Typora 更改编辑器的宽度](https://www.likecs.com/default/index/img?u=L2RlZmF1bHQvaW5kZXgvaW1nP3U9YUhSMGNITTZMeTl3YVdGdWMyaGxiaTVqYjIwdmFXMWhaMlZ6THpFek9DOWtaREEyT0RSaU1USTBZMkZsWkRVNVlUVm1NV0kyWWpCaFpEQTFabUpoWVM1d2JtYz0=)
+  ![image-20221211213816604](images/image-20221211213816604.png)
   
   
 
@@ -43,7 +43,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 这个编辑宽度也可能是为了照顾所有的显示器，编辑宽度显得比较局促。
 
-- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\Administrator\AppData\Roaming\Typora\themes` 目录下；
+- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\%UserName%\AppData\Roaming\Typora\themes` 目录下；
 
   ※`Administrator`是电脑当前的用户名，按照自己的实际用户名替换该字符。
 
@@ -51,7 +51,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
   选择使用主题的css文件，搜索 `#write` ，修改其属性 `max-width` 为 `1060px` 。所图所示：
 
-  ![Typora 更改编辑器的宽度](https://www.likecs.com/default/index/img?u=L2RlZmF1bHQvaW5kZXgvaW1nP3U9YUhSMGNITTZMeTl3YVdGdWMyaGxiaTVqYjIwdmFXMWhaMlZ6THpReE5pOHdNbU00TjJFeU1UVTJOamd4WVdSa09HTXlZamRtWlRreE9EWXlPVFV6TUM1d2JtYz0=)
+  ![image-20221211213843971](images/image-20221211213843971.png)
 
   现在大家的屏幕宽度至少都是 1920 ，应该是修改下面的区域的数据：
 
