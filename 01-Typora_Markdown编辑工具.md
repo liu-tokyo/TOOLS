@@ -29,14 +29,17 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
   最新版本已经修改为 `C:\Program Files\Typora\resources\style` 的目录下，找不到的话，可以直接搜索该文件。
 
+  - Winget安装的话：  
+    `C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style`
+
 - 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800` ；
 
   懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。
-  
+
   修改的情况如图所示：
-  
+
   ![image-20221211213816604](images/image-20221211213816604.png)
-  
+
   
 
 ## 3. 修改编辑器（主题） 的宽度
