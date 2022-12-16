@@ -13,13 +13,23 @@
 
   https://www.typora.io/windows/dev_release.html?utm_source=0xo.net
 
-  `0.11.18` 版本，只有 [Linux](https://download.typora.io/linux/typora_0.11.18_amd64.deb) 的版本是真实免费的。
+  `0.11.18` 版本，只有 [Linux](https://download.typora.io/linux/typora_0.11.18_amd64.deb) 的版本是真实免费的。（2022.12.15验证，这些链接都已经无法下载）
   
   Windows的免费版本，只有一个 `0.9.98` ：
   
   - [Download old version (Windows x64)](https://download.typora.io/windows/typora-update-x64-1213.exe) 
   - [Download old version (Windows x86)](https://download.typora.io/windows/typora-update-ia32-1213.exe) 
   - [Download old version (Linux x64)](https://download.typora.io/linux/typora_0.9.98_amd64.deb)
+  
+- 其它下载地址：
+
+  | 地址                                                         | 版本                    | 备注                       |
+  | ------------------------------------------------------------ | ----------------------- | -------------------------- |
+  | https://typora.jp.uptodown.com/windows/versions              | Windows 多个旧版本      | 至少 0.9.9.96 是完全免费的 |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-setup-x64_0.9.96.exe | Windows x64 0.9.96      |                            |
+  | https://github.com/iuxt/src/releases/download/2.0/Typora_Linux_0.11.18_amd64.deb | Linux（Ubuntu、Debian） | Linux_0.11.18_amd64.deb    |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.dmg | Mac                     |                            |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.tar.gz | Linux（Debian系以外）   |                            |
 
 ## 2. 调整源码编辑区域宽度
 
