@@ -23,17 +23,40 @@
   
 - 其它下载地址：
 
-  | 地址                                                         | 版本                    | 备注                       |
-  | ------------------------------------------------------------ | ----------------------- | -------------------------- |
-  | https://typora.jp.uptodown.com/windows/versions              | Windows 多个旧版本      | 至少 0.9.9.96 是完全免费的 |
-  | https://github.com/iuxt/src/releases/download/2.0/typora-setup-x64_0.9.96.exe | Windows x64 0.9.96      |                            |
-  | https://github.com/iuxt/src/releases/download/2.0/Typora_Linux_0.11.18_amd64.deb | Linux（Ubuntu、Debian） | Linux_0.11.18_amd64.deb    |
-  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.dmg | Mac                     |                            |
-  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.tar.gz | Linux（Debian系以外）   |                            |
+  | 地址                                                         | 版本                    | 备注                                                         |
+  | ------------------------------------------------------------ | ----------------------- | ------------------------------------------------------------ |
+  | https://typora.jp.uptodown.com/windows/versions              | Windows 多个旧版本      | 至少 0.9.9.96 是完全免费的                                   |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-setup-x64_0.9.96.exe | Windows x64 0.9.96      |                                                              |
+  | https://github.com/iuxt/src/releases/download/2.0/Typora_Linux_0.11.18_amd64.deb | Linux（Ubuntu、Debian） | Linux_0.11.18_amd64.deb                                      |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.dmg | Mac                     |                                                              |
+  | https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.tar.gz | Linux（Debian系以外）   |                                                              |
+  | https://zahui.fan/posts/64b52e0d/                            | 各个免费版本及安装办法  | [DEB](https://github.com/iuxt/src/releases/download/2.0/Typora_Linux_0.11.18_amd64.deb) [WIN](https://github.com/iuxt/src/releases/download/2.0/typora-setup-x64_0.9.96.exe) [MAC](https://github.com/iuxt/src/releases/download/2.0/typora-0-11-18.dmg) |
+
+### 1.1 Ubuntu 指令安装
+
+- 安装指令：
+
+  ※仅仅是为了说明安装办法，不要用该办法安装。它最大的问题是，这个安装是安装的当前最新版本，没有许可是不可长期使用的，还是下载最后的免费版本比较合适。
+
+  ```bash
+  # 添加 Typora 的公共键
+  wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+  
+  # 添加 Typora 的软件仓库
+  sudo add-apt-repository 'deb https://typora.io/linux ./'
+  
+  # 软件更新
+  sudo apt-get update
+  
+  # 安装 Typora
+  sudo apt-get install typora
+  ```
 
 ## 2. 调整源码编辑区域宽度
 
 Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px，对当前流行电脑的分辨率来说，实在是太窄了，工作起来也非常别扭。
+
+### 2.1 Windows 版本
 
 - 在 `C:\Program Files\Typora\resources\app\style\` 下，找到 `base-control.css` 文件；
 
@@ -50,11 +73,17 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
   ![image-20221211213816604](images/image-20221211213816604.png)
 
-  
+### 2.2 Linux 版本
+
+- Ubuntu - Linux
+
+  软件安装位置：`/usr/share/typora/resources/style`
 
 ## 3. 修改编辑器（主题） 的宽度
 
 这个编辑宽度也可能是为了照顾所有的显示器，编辑宽度显得比较局促。
+
+### 3.1 Windows 版本
 
 - 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\%UserName%\AppData\Roaming\Typora\themes` 目录下；
 
@@ -76,7 +105,17 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   }
   ```
 
-  如果不想用像素 1200px ，可以设置为 `90%` 的比例数据；考虑到个人一直会在左侧显示大纲内容，用比例方式是更为合适的。
+  如果不想用像素 1200px 方式，可以设置为 `90%` 的比例数据；考虑到个人一直会在左侧显示大纲内容，用比例方式是更为合适的。
+
+### 3.2 Linux 版本
+
+- Linux 版本的话，主题宽度调整的文件处于如下位置：
+
+  **DEEPIN**：`/opt/apps/io.typora/files/typora/resources/style/themes`
+  
+  但是，为啥即使修改了，也一直不起效？？？
+  
+  **Ubuntu**：`~/.config/Typora/themes`
 
 ## 4. 卸载
 
