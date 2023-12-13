@@ -78,6 +78,15 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 - Ubuntu - Linux
 
   软件安装位置：`/usr/share/typora/resources/style`
+  
+  ```
+  cd /usr/share/typora/resources/style
+  sudo chmod 777 base-control.css
+  sudo nano base-control.css
+  sudo chmod 644 base-control.css
+  ```
+  
+  
 
 ## 3. 修改编辑器（主题） 的宽度
 
@@ -116,6 +125,17 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   但是，为啥即使修改了，也一直不起效？？？
   
   **Ubuntu**：`~/.config/Typora/themes`
+  
+  修改指令如下：
+  
+  ```
+  cd  /usr/share/typora/resources/style/themes/
+  sudo chmod 777 night.css
+  sudo nano night.css
+  sudo chmod 644 night.css
+  ```
+  
+  
 
 ## 4. 软件卸载
 
