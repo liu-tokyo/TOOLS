@@ -69,8 +69,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
   懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。
 
-  修改的情况如图所示：
-
+  修改的情况如图所示：  
   ![image-20221211213816604](images/image-20221211213816604.png)
 
 ### 2.2 Linux 版本
@@ -100,8 +99,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 - 主题有 github.css、newsprint.css、night.css、pixyll.css、whitey.css 。
 
-  选择使用主题的css文件，搜索 `#write` ，修改其属性 `max-width` 为 `1060px` 。所图所示：
-
+  选择使用主题的css文件，搜索 `#write` ，修改其属性 `max-width` 为 `1060px` 。所图所示：  
   ![image-20221211213843971](images/image-20221211213843971.png)
 
   现在大家的屏幕宽度至少都是 1920 ，应该是修改下面的区域的数据：
@@ -151,12 +149,10 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 2. 删除Typora残留的文件，使用下面的命令：
 
-   ```
+   ```shell
    DEL /F /Q "C:\Users\%USERNAME%\AppData\Roaming\Typora\profile.data"
    REG delete HKEY_CURRENT_USER\SOFTWARE\Typora /f
    ```
-
-
 
 ## 5. 快捷键
 
@@ -286,6 +282,16 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 
 
+## 附1：代替软件
 
+鉴于 `1.0.0` 版本之后开始收费，可以选择 `MarkText` 。
 
-AA[^1]
+- 通过安装向导 (marktext-setup-%version%.exe) 下载并安装 `MarkText`。
+
+- 使用 `winget` 进行安装  
+
+  ```bahs
+  winget install marktext
+  ```
+
+  
