@@ -112,7 +112,28 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   }
   ```
 
-  如果不想用像素 1200px 方式，可以设置为 `90%` 的比例数据；考虑到个人一直会在左侧显示大纲内容，用比例方式是更为合适的。
+  如果不想用像素 `1200px` 方式，可以设置为 `90%` 的比例数据；考虑到个人一直会在左侧显示大纲内容，用比例方式是更为合适的。
+
+#### 备注：新版本
+
+新版本的 `Typora` 的源代码修改，已经发生了改变，也转移到了 `C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style` 的 `base-control.css` 文件中。
+
+- 大概在如下位置：
+
+  ```css
+  #typora-source .CodeMirror-lines {
+    /* ... 其他属性 ... */
+    max-width: 860px; /* 或其他值 */
+    /* ... 其他属性 ... */
+  }
+  ```
+
+  ※ 直接搜索 `#typora-source .CodeMirror-lines` 即可，文件中只有一个，不会出现歧义。找到 `max-width` 项目，修改为 `90%`，或者希望没有边框的话，设置为 `none` 即可。
+
+  **💡 注意：**
+
+  - `base-control.css` 文件控制着 Typora 核心 UI 的样式。
+  - 如果您修改的是 **预览/编辑模式** 下的文本宽度（而不是源代码模式），则需要修改您当前**使用的主题**对应的 `.css` 文件（例如 `github.css`），并搜索 **`#write`** 元素下的 `max-width` 属性。
 
 ### 3.2 Linux 版本
 
