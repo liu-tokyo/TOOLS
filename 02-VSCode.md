@@ -3,11 +3,11 @@
 ## 1. 汉字黄色标记
 
 - 点击左侧小齿轮（管理）；
-- 点击弹出菜单中的Settings（设置）；  
+- 点击弹出菜单中的 `Settings（设置）`；  
   下面的 3 项设置依然比较复杂，直接检索 `nonBasicASCII` 立马就可以看到选项。
-- 在上方搜索框中搜索“quick”；
-- 搜索结果中点击“Edit in settings.json”；
-- 加上下图中红框标记的配置“"editor.unicodeHighlight.nonBasicASCII": false”；
+- 在上方搜索框中搜索 `quick`；
+- 搜索结果中点击 `Edit in settings.json`；
+- 加上下图中红框标记的配置 `"editor.unicodeHighlight.nonBasicASCII": false`；
 
 ## 2. 鼠标右键显示
 
