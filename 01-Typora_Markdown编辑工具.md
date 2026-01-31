@@ -7,7 +7,9 @@
 
 - 官方下载地址：
 
-  https://typora.io/
+  https://typora.io/  
+  https://typora.io/releases/stable.html  
+  ※ 官方网站只提供从 1.0.0 开始的正式版本。
 
 - 最后免费版本的下载地址：
 
@@ -58,27 +60,14 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 ### 2.1 Windows 版本
 
-- 找到 `base-control.css` 文件  
-  旧版本：  
-
-  ```
-  `C:\Program Files\Typora\resources\app\style\
-  ```
-
-  最新版本：
-
-  ```
-  C:\Program Files\Typora\resources\style
-  ```
-
-  Winget安装的话：  
-
-  ```
-  C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style
-  ```
-
+- 找到 `base-control.css` 文件位置  
   
-
+  | 版本区分         | 位置                                                         | 备注 |
+  | ---------------- | ------------------------------------------------------------ | ---- |
+  | 旧版本           | `C:\Program Files\Typora\resources\app\style\`               |      |
+  | 新版本           | `C:\Program Files\Typora\resources\style`                    |      |
+  | Winget安装的版本 | `C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style` |      |
+  
 - 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800px` ；
 
   懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。  
