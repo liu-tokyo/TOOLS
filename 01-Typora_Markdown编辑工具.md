@@ -68,14 +68,11 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   | 新版本           | `C:\Program Files\Typora\resources\style`                    |      |
   | Winget安装的版本 | `C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style` |      |
   
-- 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800px` ；
-
+- 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800px` ；  
   懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。  
-
   ```
   padding-right:30px;max-width:
   ```
-  
   修改的情况如图所示：  
   ![image-20221211213816604](images/image-20221211213816604.png)
 
