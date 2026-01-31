@@ -58,17 +58,35 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 ### 2.1 Windows 版本
 
-- 在 `C:\Program Files\Typora\resources\app\style\` 下，找到 `base-control.css` 文件；
+- 找到 `base-control.css` 文件  
+  旧版本：  
 
-  最新版本已经修改为 `C:\Program Files\Typora\resources\style` 的目录下，找不到的话，可以直接搜索该文件。
+  ```
+  `C:\Program Files\Typora\resources\app\style\
+  ```
 
-  - Winget安装的话：  
-    `C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style`
+  最新版本：
 
-- 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800` ；
+  ```
+  C:\Program Files\Typora\resources\style
+  ```
 
-  懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。
+  Winget安装的话：  
 
+  ```
+  C:\Users\%UserName%\AppData\Local\Programs\Typora\resources\style
+  ```
+
+  
+
+- 打开后搜索 `#typora-source` 更改其最大宽度 `max-width` 为`1200` ，不过设置文件中有多处 `max-width` ，应该是第三个的位置？原始数值是`800px` ；
+
+  懒惰的话，可以直接搜索 `padding-right:30px;max-width:` ，这个项目只有 1 个，找起来很方便。  
+
+  ```
+  padding-right:30px;max-width:
+  ```
+  
   修改的情况如图所示：  
   ![image-20221211213816604](images/image-20221211213816604.png)
 
@@ -114,7 +132,11 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 ### 3.1 Windows 版本
 
-- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\%UserName%\AppData\Roaming\Typora\themes` 目录下；
+- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\%UserName%\AppData\Roaming\Typora\themes` 目录下：  
+
+  ```
+  padding-right:30px;max-width:
+  ```
 
   ※`Administrator`是电脑当前的用户名，按照自己的实际用户名替换该字符。
 
@@ -154,7 +176,7 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   }
   ```
   
-  
+  ※ 小屏幕电脑的话，可以设置为比例 `95%` 更加合适。
 
 ### 3.2 Linux 版本
 
