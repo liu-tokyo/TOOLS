@@ -124,13 +124,13 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   C:\Users\%UserName%\AppData\Roaming\Typora\themes
   ```
 
+  ※`Administrator`是电脑当前的用户名，按照自己的实际用户名替换该字符。
+
   打开相应的 CSS 文件，查找如下内容：
 
   ```
-  padding-right:30px;max-width:
+  max-width:
   ```
-
-  ※`Administrator`是电脑当前的用户名，按照自己的实际用户名替换该字符。
 
 - 主题有 github.css、newsprint.css、night.css、pixyll.css、whitey.css 。
 
