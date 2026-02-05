@@ -118,7 +118,13 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
 
 ### 3.1 Windows 版本
 
-- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在 `C:\Users\%UserName%\AppData\Roaming\Typora\themes` 目录下：  
+- 普通编辑器的配置文件 并不在 Typora 的安装目录， 是在如下目录下：  
+
+  ```
+  C:\Users\%UserName%\AppData\Roaming\Typora\themes
+  ```
+
+  打开相应的 CSS 文件，查找如下内容：
 
   ```
   padding-right:30px;max-width:
