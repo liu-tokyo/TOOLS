@@ -351,3 +351,87 @@ Typora的源码编辑宽度很窄，可能是为了照顾老用户？只有800px
   ```
 
   
+
+# Markdown - 编辑技巧
+
+## 1. 可折叠文本框
+
+### 1.1 可折叠文本框语法
+
+在 Standard Markdown 中，可以使用 HTML 的 `<details>` 和 `<summary>` 标签来实现可折叠文本框。大多数主流 Markdown 渲染器（如 GitHub、Gitee、Notion、VS Code 等）都完全支持这种写法。
+
+- **基本语法**
+
+  ```html
+  <details>
+  <summary>点击展开 / 折叠</summary>
+  
+  这里是折叠框内部的隐藏内容。
+  支持编写多行文本。
+  
+  </details>
+  ```
+
+- **进阶：在折叠框内使用 Markdown 格式（代码块、列表等）**
+
+  如果你想在折叠框内部使用 Markdown 的语法（例如**加粗**、`行内代码`、代码块或列表），**必须在 `<summary>` 标签下方留出一行空行**：
+
+  ~~~html
+  <details>
+  <summary>点击查看代码示例</summary>
+  
+  <!-- 注意：上方必须留一个空行 -->
+  
+  ### 标题
+  * 列表项 1
+  * 列表项 2
+  
+  ```javascript
+  console.log("Hello, World!");
+  ~~~
+
+- **默认展开状态**
+
+  在 `<details>` 标签中添加 `open` 属性：
+
+  ```html
+  <details open>
+  <summary>默认展开的文本框（点击可收起）</summary>
+  
+  这里的内容默认就会显示出来。
+  
+  </details>
+  ```
+
+### 1.2 GitHub / GitLab 上使用
+
+为了确保在 GitHub/GitLab 网页端渲染时不出现格式混乱，编写时需注意以下两点：
+
+1. 折叠框内写 Markdown 语法必须空行
+  如果在折叠内容里使用了 Markdown（如代码块、列表、加粗等），<summary> 标签下方必须留出至少一行空行，否则 GitHub/GitLab 会把内部内容直接当成纯文本或解析失败。
+
+  ~~~html
+  <details>
+  <summary>点击查看 GitLab/GitHub 上的代码示例</summary>
+  
+  <!-- 上方一定要空一行 -->
+  
+  ```python
+  def hello():
+      print("GitHub & GitLab 都完美支持折叠框！")
+  ~~~
+
+2. `<summary>` 标题尽量保持在同一行
+  `<summary>` 标签和其中的提示文字最好写在同一行，避免在不同平台产生意料之外的换行行为：
+
+  ```html
+  <!-- 推荐写法 -->
+  <summary>点击展开详细日志</summary>
+  
+  <!-- 尽量避免跨行 -->
+  <summary>
+    点击展开详细日志
+  </summary>
+  ```
+
+  
